@@ -34,43 +34,43 @@ const App = () => {
     const fetchData = async () => {
       try {
         const responseHemo = await axios.get(
-          `http://localhost:3001/api/getHemoglobinData`
+          `https://backend.choreoapps.dev/api/getHemoglobinData`
         );
         setHemoData(responseHemo.data);
         const responseRbc = await axios.get(
-          `http://localhost:3001/api/getRbcData`
+          `https://backend.choreoapps.dev/api/getRbcData`
         );
         setRbcData(responseRbc.data);
 
         const responseWbc = await axios.get(
-          `http://localhost:3001/api/getWbcData`
+          `https://backend.choreoapps.dev/api/getWbcData`
         );
         setWbcData(responseWbc.data);
 
         const responsePlatelets = await axios.get(
-          `http://localhost:3001/api/getPlateletsData`
+          `https://backend.choreoapps.dev/api/getPlateletsData`
         );
         setPlateletsData(responsePlatelets.data);
 
         const responseBloodTransfused = await axios.get(
-          `http://localhost:3001/api/getBloodTransfusedData`
+          `https://backend.choreoapps.dev/api/getBloodTransfusedData`
         );
         setBloodTransfusedData(responseBloodTransfused.data);
 
         const responsePlateletsTransfused = await axios.get(
-          `http://localhost:3001/api/getPlateletsTransfusedData`
+          `https://backend.choreoapps.dev/api/getPlateletsTransfusedData`
         );
         setPlateletsTransfusedData(responsePlateletsTransfused.data);
 
         const responseTotalPlateletsTransfusedCount = await axios.get(
-          `http://localhost:3001/api/getTotalPlateletsCountData`
+          `https://backend.choreoapps.dev/api/getTotalPlateletsCountData`
         );
         setTotalPlateletsTransfusedCountData(
           responseTotalPlateletsTransfusedCount.data[0].totalPlateletsCount
         );
 
         const responseTotalBloodTransfusedCount = await axios.get(
-          `http://localhost:3001/api/getTotalBloodCountData`
+          `https://backend.choreoapps.dev/api/getTotalBloodCountData`
         );
 
         setTotalBloodTransfusedCountData(
@@ -78,14 +78,14 @@ const App = () => {
         );
 
         const responseFreeFromPlateletTransfusionFrom = await axios.get(
-          `http://localhost:3001/api/getFreeFromPlateletTransfusionFromData`
+          `https://backend.choreoapps.dev/api/getFreeFromPlateletTransfusionFromData`
         );
         setFreeFromPlateletTransfusionFromData(
           responseFreeFromPlateletTransfusionFrom.data.plateletLasts
         );
 
         const responseFreeFromBloodTransfusionFromData = await axios.get(
-          `http://localhost:3001/api/getFreeFromBloodTransfusionFromData`
+          `https://backend.choreoapps.dev/api/getFreeFromBloodTransfusionFromData`
         );
 
         setFreeFromBloodTransfusionFromDataData(
